@@ -393,6 +393,10 @@ footer {
     .logo-area a img {
         max-width: 235px;
     }
+
+.header-area.sticky .logo-area img {
+    max-width: 220px;
+}
     
     .header_Right a {
         font-size: 22px;
@@ -401,17 +405,29 @@ footer {
         right: 20px;
         top: 20px;
     }
+
+.header-area.sticky .header_Right a {
+    top: 18px;
+}
     
     .contact_icon ul li a {
         width: 60px;
         height: 60px;
         font-size: 22px;
-        margin-bottom: 20px;
+        margin-bottom: 0;
+        margin: 0 10px;
     }
     
     .contact_icon {
-    display: none;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
     }
+
+.contact_icon ul {
+    display: flex;
+}
     
     .hero_cont h1 {
         font-size: 40px;
@@ -585,6 +601,10 @@ footer {
 }
 .header-area {
     padding-top: 20px;
+}
+
+.header-area.sticky {
+    padding: 10px 0;
 }
 
 .einsieg_content {
